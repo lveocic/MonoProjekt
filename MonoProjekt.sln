@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoProjekt", "MonoProjekt.csproj", "{BCC66784-8AB2-4180-BEB4-E5CBD5F52057}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCC66784-8AB2-4180-BEB4-E5CBD5F52057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCC66784-8AB2-4180-BEB4-E5CBD5F52057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCC66784-8AB2-4180-BEB4-E5CBD5F52057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCC66784-8AB2-4180-BEB4-E5CBD5F52057}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92E70D0B-3F10-4E22-97B7-9ACCFF217AC6}
+	EndGlobalSection
+EndGlobal
