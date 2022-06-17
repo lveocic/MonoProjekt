@@ -1,0 +1,9 @@
+C:\Projects\Mono\MonoProjekt\obj\Release\net6.0\MonoProjekt.MVC.csproj.AssemblyReference.cache
+C:\Projects\Mono\MonoProjekt\obj\Release\net6.0\MonoProjekt.MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Mono\MonoProjekt\obj\Release\net6.0\MonoProjekt.MVC.AssemblyInfoInputs.cache
+C:\Projects\Mono\MonoProjekt\obj\Release\net6.0\MonoProjekt.MVC.AssemblyInfo.cs
+C:\Projects\Mono\MonoProjekt\obj\Release\net6.0\MonoProjekt.MVC.csproj.CoreCompileInputs.cache
+C:\Projects\Mono\MonoProjekt\obj\Release\net6.0\MonoProjekt.MVC.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\Mono\MonoProjekt\obj\Release\net6.0\MonoProjekt.MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\Mono\MonoProjekt\obj\Release\net6.0\MonoProjekt.MVC.RazorAssemblyInfo.cache
+C:\Projects\Mono\MonoProjekt\obj\Release\net6.0\MonoProjekt.MVC.RazorAssemblyInfo.cs

@@ -1,5 +1,5 @@
-using Microsoft.EntityFrameworkCore;
-using MonoProjekt.DAL;
+﻿using Microsoft.EntityFrameworkCore;
+using MonoProjekt.Service.DAL;
 using Ninject;
 using System.Reflection;
 
