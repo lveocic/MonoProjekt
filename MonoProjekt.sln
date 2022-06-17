@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoProjekt.MVC", "MonoProjekt.MVC.csproj", "{BCC66784-8AB2-4180-BEB4-E5CBD5F52057}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoProjekt.Service", "..\MonoProjekt.Test\MonoProjekt.Service.csproj", "{BAA55E93-D657-4089-AD56-38FBB1470BEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoProjekt.Service", "..\MonoProjekt.Test\MonoProjekt.Service.csproj", "{BAA55E93-D657-4089-AD56-38FBB1470BEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,8 +13,8 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BCC66784-8AB2-4180-BEB4-E5CBD5F52057}.Debug|Any CPU.ActiveCfg = Release|Any CPU
-		{BCC66784-8AB2-4180-BEB4-E5CBD5F52057}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{BCC66784-8AB2-4180-BEB4-E5CBD5F52057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCC66784-8AB2-4180-BEB4-E5CBD5F52057}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCC66784-8AB2-4180-BEB4-E5CBD5F52057}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCC66784-8AB2-4180-BEB4-E5CBD5F52057}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BAA55E93-D657-4089-AD56-38FBB1470BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

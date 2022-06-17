@@ -168,6 +168,10 @@
               "target": "Package",
               "version": "[3.3.0, )"
             },
+            "Ninject.Web.Common": {
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[6.0.4, )"
@@ -175,6 +179,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.3.1, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             }
           },
           "imports": [
