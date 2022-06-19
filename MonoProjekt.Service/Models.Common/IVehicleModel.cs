@@ -14,7 +14,7 @@ namespace MonoProjekt.Service.Models.Common
         Guid Id { get; set; }
         Guid MakeId { get; set; }
         string Name { get; set; }
-        IVehicleMake vehicleMake { get; set; }
+        IVehicleMake VehicleMake { get; set; }
 
         #endregion Properties
     }

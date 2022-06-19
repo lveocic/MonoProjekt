@@ -13,6 +13,8 @@ namespace MonoProjekt.Service.Repository.Mapping
         {
             CreateMap<VehicleMake, VehicleMakeEntity>().ReverseMap();
             CreateMap<IVehicleMake, VehicleMakeEntity>().ReverseMap();
+            CreateMap<VehicleModel, VehicleModelEntity>().ReverseMap();
+            CreateMap<IVehicleModel, VehicleModelEntity>().ReverseMap();
         }
 
         #endregion Constructors

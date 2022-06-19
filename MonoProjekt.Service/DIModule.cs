@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace MonoProjekt.Service
 {
-    internal class DIModule : NinjectModule
+    public class DIModule : NinjectModule
     {
         #region Methods
 

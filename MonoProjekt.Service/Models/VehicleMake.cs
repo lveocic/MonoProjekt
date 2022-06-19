@@ -9,7 +9,6 @@ namespace MonoProjekt.Service.Models
         public string Abrv { get; set; }
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public IEnumerable<IVehicleModel> VehicleModels { get; set; }
 
         #endregion Properties
     }
