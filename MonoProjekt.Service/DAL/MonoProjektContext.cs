@@ -24,7 +24,7 @@ namespace MonoProjekt.Service.DAL
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.UseSerialColumns();
+            modelBuilder.UseSerialColumns();
         }
 
         #endregion Methods

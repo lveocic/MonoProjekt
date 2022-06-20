@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/9fI/Wnp1rKBAN42VzLAKhfJCEJdgPrhgtXmXWfZ1p1tgoKyKPSwzlNIeH39Vc9fYo7bJhE6eD7kYaaFi0bssQ==",
+  "dgSpecHash": "1LnRJDXE2094kPCJePSPakLVspRUTsgLyA1iOR8PUY9VlgDkDe9E/g/IPEgJC+SJxn/oFa2nxcCKdBeJbyz8LA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\Mono\\MonoProjekt\\MonoProjekt.Service\\MonoProjekt.Service.csproj",
   "expectedPackageFiles": [
@@ -29,9 +29,10 @@
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.6\\microsoft.entityframeworkcore.6.0.6.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.6\\microsoft.entityframeworkcore.abstractions.6.0.6.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.6\\microsoft.entityframeworkcore.analyzers.6.0.6.nupkg.sha512",
+    "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.5\\microsoft.entityframeworkcore.relational.6.0.5.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
-    "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.2.0\\microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.extensions.dependencymodel\\2.1.0\\microsoft.extensions.dependencymodel.2.1.0.nupkg.sha512",
@@ -51,6 +52,8 @@
     "C:\\Users\\lveoc\\.nuget\\packages\\ninject.mvc5\\3.3.0\\ninject.mvc5.3.3.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\ninject.web.common\\3.3.0\\ninject.web.common.3.3.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\ninject.web.common.webhost\\3.3.0\\ninject.web.common.webhost.3.3.0.nupkg.sha512",
+    "C:\\Users\\lveoc\\.nuget\\packages\\npgsql\\6.0.5\\npgsql.6.0.5.nupkg.sha512",
+    "C:\\Users\\lveoc\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.5\\npgsql.entityframeworkcore.postgresql.6.0.5.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",

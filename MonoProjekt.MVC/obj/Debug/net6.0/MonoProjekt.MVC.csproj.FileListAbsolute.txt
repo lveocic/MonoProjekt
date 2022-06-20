@@ -571,3 +571,4 @@ C:\Projects\Mono\MonoProjekt\MonoProjekt.MVC\obj\Debug\net6.0\refint\MonoProjekt
 C:\Projects\Mono\MonoProjekt\MonoProjekt.MVC\obj\Debug\net6.0\MonoProjekt.MVC.pdb
 C:\Projects\Mono\MonoProjekt\MonoProjekt.MVC\obj\Debug\net6.0\MonoProjekt.MVC.genruntimeconfig.cache
 C:\Projects\Mono\MonoProjekt\MonoProjekt.MVC\obj\Debug\net6.0\ref\MonoProjekt.MVC.dll
+C:\Projects\Mono\MonoProjekt\MonoProjekt.MVC\bin\Debug\net6.0\HttpModuleMagic.dll

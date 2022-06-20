@@ -10,6 +10,7 @@
         "dependencies": {
           "AutoMapper": "11.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "HttpModuleMagic": "0.1.0",
           "Microsoft.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore.Design": "6.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
@@ -19,7 +20,7 @@
           "Ninject": "3.3.6",
           "Ninject.MVC5": "3.3.0",
           "Ninject.Web.Common": "3.3.2",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.5",
           "Swashbuckle.AspNetCore": "6.3.1",
           "System.Net.Http": "4.3.4"
         },
@@ -47,6 +48,14 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.0.0.0"
+          }
+        }
+      },
+      "HttpModuleMagic/0.1.0": {
+        "runtime": {
+          "lib/net40/HttpModuleMagic.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
           }
         }
       },
@@ -1595,28 +1604,28 @@
           }
         }
       },
-      "Npgsql/6.0.4": {
+      "Npgsql/6.0.5": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "runtime": {
           "lib/net6.0/Npgsql.dll": {
-            "assemblyVersion": "6.0.4.0",
-            "fileVersion": "6.0.4.0"
+            "assemblyVersion": "6.0.5.0",
+            "fileVersion": "6.0.5.0"
           }
         }
       },
-      "Npgsql.EntityFrameworkCore.PostgreSQL/6.0.4": {
+      "Npgsql.EntityFrameworkCore.PostgreSQL/6.0.5": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore.Abstractions": "6.0.6",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.6",
-          "Npgsql": "6.0.4"
+          "Npgsql": "6.0.5"
         },
         "runtime": {
           "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
-            "assemblyVersion": "6.0.4.0",
-            "fileVersion": "6.0.4.0"
+            "assemblyVersion": "6.0.5.0",
+            "fileVersion": "6.0.5.0"
           }
         }
       },
@@ -2606,6 +2615,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.6",
           "Ninject": "3.3.6",
           "Ninject.MVC5": "3.3.0",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.5",
           "System.Runtime": "4.3.1"
         },
         "runtime": {
@@ -2633,6 +2643,13 @@
       "sha512": "sha512-0asw5WxdCFh2OTi9Gv+oKyH9SzxwYQSnO8TV5Dd0GggovILzJW4UimP26JAcxc3yB5NnC5urooZ1BBs8ElpiBw==",
       "path": "automapper.extensions.microsoft.dependencyinjection/11.0.0",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512"
+    },
+    "HttpModuleMagic/0.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Bwirck9acm3eXiU/kL7Tt+nfx3SY4HHEkE6TJ6yfJHcQ/2v1xcE+sIxVmEouQtHoz8RkG6v5V3E8KUDICMtVJg==",
+      "path": "httpmodulemagic/0.1.0",
+      "hashPath": "httpmodulemagic.0.1.0.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
@@ -3327,19 +3344,19 @@
       "path": "ninject.web.common.webhost/3.3.0",
       "hashPath": "ninject.web.common.webhost.3.3.0.nupkg.sha512"
     },
-    "Npgsql/6.0.4": {
+    "Npgsql/6.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SJMlOmFHr32oOzVXeHmarGaBKkhi0wHVN/rzuu2tUSJ4Qx2AkHCpr9R/DhLWwDiklqgzFU++9wkFyGJxbx/zzg==",
-      "path": "npgsql/6.0.4",
-      "hashPath": "npgsql.6.0.4.nupkg.sha512"
+      "sha512": "sha512-a11H5/b5yNTuFN0Ycjvb920oI6vQHadt6KhEMmcC7DfvsSHH8Z3wBam+CHmyWcfDxJJaxamcdBb8XA3BvqS4Kw==",
+      "path": "npgsql/6.0.5",
+      "hashPath": "npgsql.6.0.5.nupkg.sha512"
     },
-    "Npgsql.EntityFrameworkCore.PostgreSQL/6.0.4": {
+    "Npgsql.EntityFrameworkCore.PostgreSQL/6.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fzgRmBd3nAFvKt/L70sJfFWAdobtwDEeOzOzruJq9og97O8/5B96inQOAgOpYyaUjPYpS4ZS5/bxm3vnOJ0+pQ==",
-      "path": "npgsql.entityframeworkcore.postgresql/6.0.4",
-      "hashPath": "npgsql.entityframeworkcore.postgresql.6.0.4.nupkg.sha512"
+      "sha512": "sha512-1eAaz5CwwZbATraqYyYsG2tMWZM1ydyLmQVpFGTzkUUKB/sAL5QWB0IfjSxOjiIDp5JY1WoFndkcaGMEcexVXg==",
+      "path": "npgsql.entityframeworkcore.postgresql/6.0.5",
+      "hashPath": "npgsql.entityframeworkcore.postgresql.6.0.5.nupkg.sha512"
     },
     "NuGet.Common/5.11.0": {
       "type": "package",

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "cIDOZHL6HxijKPASfausWpUhql+YKiAp20SuLSHxEZrHUkgfooSGsepIg18czqP1xDKlRMgU90U9tyg1LZg5KQ==",
+  "dgSpecHash": "yPZQr47lSolilphbyU9U2avwmx9xAHZ5mPMU5x/6PsQciS7RkCjbmspA08XWwDjdvRNrgV6ZxIPQY4eZ2Nk4Og==",
   "success": true,
   "projectFilePath": "C:\\Projects\\Mono\\MonoProjekt\\MonoProjekt.MVC\\MonoProjekt.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lveoc\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\lveoc\\.nuget\\packages\\httpmodulemagic\\0.1.0\\httpmodulemagic.0.1.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
@@ -105,8 +106,8 @@
     "C:\\Users\\lveoc\\.nuget\\packages\\ninject.mvc5\\3.3.0\\ninject.mvc5.3.3.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\ninject.web.common\\3.3.2\\ninject.web.common.3.3.2.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\ninject.web.common.webhost\\3.3.0\\ninject.web.common.webhost.3.3.0.nupkg.sha512",
-    "C:\\Users\\lveoc\\.nuget\\packages\\npgsql\\6.0.4\\npgsql.6.0.4.nupkg.sha512",
-    "C:\\Users\\lveoc\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.4\\npgsql.entityframeworkcore.postgresql.6.0.4.nupkg.sha512",
+    "C:\\Users\\lveoc\\.nuget\\packages\\npgsql\\6.0.5\\npgsql.6.0.5.nupkg.sha512",
+    "C:\\Users\\lveoc\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.5\\npgsql.entityframeworkcore.postgresql.6.0.5.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\nuget.common\\5.11.0\\nuget.common.5.11.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\nuget.configuration\\5.11.0\\nuget.configuration.5.11.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\nuget.dependencyresolver.core\\5.11.0\\nuget.dependencyresolver.core.5.11.0.nupkg.sha512",
@@ -219,6 +220,16 @@
     "C:\\Users\\lveoc\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'HttpModuleMagic 0.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "HttpModuleMagic",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

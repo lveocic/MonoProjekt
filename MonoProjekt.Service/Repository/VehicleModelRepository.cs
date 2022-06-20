@@ -14,7 +14,6 @@ namespace MonoProjekt.Service.Repository
     {
         #region Fields
 
-        public IMapper Mapper;
         private MonoProjektContext Context;
 
         #endregion Fields
@@ -28,6 +27,12 @@ namespace MonoProjekt.Service.Repository
         }
 
         #endregion Constructors
+
+        #region Properties
+
+        public IMapper Mapper { get; set; }
+
+        #endregion Properties
 
         #region Methods
 
