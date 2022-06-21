@@ -9,23 +9,25 @@ using HttpModuleMagic;
 using Ninject.Infrastructure.Disposal;
 using Ninject.Web.Common;
 using Ninject;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var app = builder.Build();
-
-var kernel = new StandardKernel();
-kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
 //kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
 
 builder.Services.AddControllersWithViews();
-kernel.Load(Assembly.GetExecutingAssembly());
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddEntityFrameworkNpgsql().AddDbContext<MonoProjektContext>(opt =>
-        opt.UseNpgsql(builder.Configuration.GetConnectionString("MonoProjekt")));
+builder.Services.AddEntityFrameworkNpgsql().AddDbContext<MonoProjektContext>(
+    opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("MonoProjektDb")));
 var path = AppDomain.CurrentDomain.BaseDirectory;
 var assemblies = Directory.GetFiles(path, "MonoProjekt.*.dll").Select(Assembly.LoadFrom).ToArray();
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+builder.Host.ConfigureContainer<ContainerBuilder>(builder => builder.RegisterModule(new MonoProjekt.Service.DIModule()));
+builder.Services.AddAutoMapper(assemblies);
+var app = builder.Build();
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

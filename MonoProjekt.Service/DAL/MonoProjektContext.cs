@@ -6,7 +6,7 @@ namespace MonoProjekt.Service.DAL
     {
         #region Constructors
 
-        public MonoProjektContext(DbContextOptions<MonoProjektContext> options)
+        public MonoProjektContext(DbContextOptions<MonoProjektContext> options) : base(options)
         {
             Database.EnsureCreated();
         }

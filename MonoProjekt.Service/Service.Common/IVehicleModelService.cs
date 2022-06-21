@@ -11,13 +11,13 @@ namespace MonoProjekt.Service.Service.Common
     {
         #region Methods
 
-        Task<bool> DeleteVehicleModelAsync(Guid id);
+        Task DeleteVehicleModelAsync(Guid id);
 
         Task<VehicleModel> FindVehicleModelAsync(Guid id);
 
-        Task<bool> InsertVehicleModelAsync(VehicleModel vehicleModel);
+        Task<VehicleModel> InsertVehicleModelAsync(VehicleModel vehicleMake);
 
-        Task<bool> UpdateVehicleModelAsync(VehicleModel vehicleModel);
+        Task UpdateVehicleModelAsync(VehicleModel vehicleMake);
 
         #endregion Methods
     }

@@ -32,14 +32,11 @@ namespace MonoProjekt.Service.Repository
 
         #region Methods
 
-        public async Task<bool> DeleteAsync(Guid id)
+        public async Task DeleteAsync(Guid id)
         {
             var vehicleMaker = Context.VehicleMakers.Find(id);
-            if (vehicleMaker == null)
-                return false;
             Context.VehicleMakers.Remove(vehicleMaker);
             await Context.SaveChangesAsync();
-            return true;
         }
 
         public async Task<VehicleMake> FindAsync(Guid id)
@@ -47,30 +44,16 @@ namespace MonoProjekt.Service.Repository
             return Mapper.Map<VehicleMake>(await Context.VehicleMakers.FindAsync(id));
         }
 
-        public async Task<bool> InsertAsync(VehicleMakeEntity entity)
+        public async Task<VehicleMake> InsertAsync(VehicleMakeEntity entity)
         {
-            if (entity == null)
-            {
-                return false;
-            }
-            else
-            {
-                var insert = await Context.AddAsync(entity);
-                return await Context.SaveChangesAsync() > 0;
-            }
+            var insert = await Context.AddAsync(entity);
+            return Mapper.Map<VehicleMake>(await Context.SaveChangesAsync());
         }
 
-        public async Task<bool> UpdateAsync(VehicleMakeEntity entity)
+        public async Task UpdateAsync(VehicleMakeEntity entity)
         {
-            if (entity == null)
-            {
-                return false;
-            }
-            else
-            {
-                var update = Context.Update(entity);
-                return await Context.SaveChangesAsync() > 0;
-            }
+           Context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+           await Context.SaveChangesAsync();           
         }
 
         #endregion Methods

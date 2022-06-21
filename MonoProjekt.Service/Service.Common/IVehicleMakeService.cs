@@ -6,13 +6,13 @@ namespace MonoProjekt.Service.Service.Common
     {
         #region Methods
 
-        Task<bool> DeleteVehicleMakerAsync(Guid id);
+        Task DeleteVehicleMakerAsync(Guid id);
 
         Task<VehicleMake> FindVehicleMakerAsync(Guid id);
 
-        Task<bool> InsertVehicleMakerAsync(VehicleMake vehicleMake);
+        Task<VehicleMake> InsertVehicleMakerAsync(VehicleMake vehicleMake);
 
-        Task<bool> UpdateVehicleMakerAsync(VehicleMake vehicleMake);
+        Task UpdateVehicleMakerAsync(VehicleMake vehicleMake);
 
         #endregion Methods
     }

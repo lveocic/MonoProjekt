@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "yPZQr47lSolilphbyU9U2avwmx9xAHZ5mPMU5x/6PsQciS7RkCjbmspA08XWwDjdvRNrgV6ZxIPQY4eZ2Nk4Og==",
+  "dgSpecHash": "LznGk3PyWMqMyeM7R569CnPmaokILZ0t8I4JCwZj2ryx6tQQP6VlfZOo7mDnBa8VMr8SGZhmDa2IdSILy097XQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\Mono\\MonoProjekt\\MonoProjekt.MVC\\MonoProjekt.MVC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lveoc\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
+    "C:\\Users\\lveoc\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\httpmodulemagic\\0.1.0\\httpmodulemagic.0.1.0.nupkg.sha512",

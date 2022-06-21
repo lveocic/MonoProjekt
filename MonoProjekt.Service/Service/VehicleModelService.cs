@@ -32,31 +32,29 @@ namespace MonoProjekt.Service.Service
 
         #region Methods
 
-        public async Task<bool> DeleteVehicleModelAsync(Guid id)
+        public async Task DeleteVehicleModelAsync(Guid id)
         {
-            var result = await VehicleModelRepository.DeleteAsync(id);
-            return result;
+            await VehicleModelRepository.DeleteAsync(id);
         }
 
         public async Task<VehicleModel> FindVehicleModelAsync(Guid id)
         {
-            var result = await VehicleModelRepository.FindAsync(id);
+            var result = VehicleModelRepository.FindAsync(id);
             return Mapper.Map<VehicleModel>(result);
         }
 
-        public async Task<bool> InsertVehicleModelAsync(VehicleModel vehicleModel)
+        public async Task<VehicleModel> InsertVehicleModelAsync(VehicleModel vehicleModel)
         {
             CreateVehicleModel(vehicleModel);
             var entity = Mapper.Map<VehicleModelEntity>(vehicleModel);
-            var result = await VehicleModelRepository.UpdateAsync(entity);
+            var result = await VehicleModelRepository.InsertAsync(entity);
             return result;
         }
 
-        public async Task<bool> UpdateVehicleModelAsync(VehicleModel vehicleModel)
+        public async Task UpdateVehicleModelAsync(VehicleModel vehicleModel)
         {
             var entity = Mapper.Map<VehicleModelEntity>(vehicleModel);
-            var result = await VehicleModelRepository.UpdateAsync(entity);
-            return result;
+            await VehicleModelRepository.UpdateAsync(entity);
         }
 
         private void CreateVehicleModel(VehicleModel vehicleModel)

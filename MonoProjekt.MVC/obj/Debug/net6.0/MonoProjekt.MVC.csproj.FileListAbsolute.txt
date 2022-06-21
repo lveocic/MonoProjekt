@@ -572,3 +572,5 @@ C:\Projects\Mono\MonoProjekt\MonoProjekt.MVC\obj\Debug\net6.0\MonoProjekt.MVC.pd
 C:\Projects\Mono\MonoProjekt\MonoProjekt.MVC\obj\Debug\net6.0\MonoProjekt.MVC.genruntimeconfig.cache
 C:\Projects\Mono\MonoProjekt\MonoProjekt.MVC\obj\Debug\net6.0\ref\MonoProjekt.MVC.dll
 C:\Projects\Mono\MonoProjekt\MonoProjekt.MVC\bin\Debug\net6.0\HttpModuleMagic.dll
+C:\Projects\Mono\MonoProjekt\MonoProjekt.MVC\bin\Debug\net6.0\Autofac.dll
+C:\Projects\Mono\MonoProjekt\MonoProjekt.MVC\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll

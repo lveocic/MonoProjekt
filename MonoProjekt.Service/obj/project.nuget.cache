@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "1LnRJDXE2094kPCJePSPakLVspRUTsgLyA1iOR8PUY9VlgDkDe9E/g/IPEgJC+SJxn/oFa2nxcCKdBeJbyz8LA==",
+  "dgSpecHash": "Bu1Qucdd/2jlV92eJnQJNDuNFd9kOa5ntWtuj7ai64t1rGzjIXqyNYWtmCgEGBPT1rLPj7iZQmNp8gdtt8MtGg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\Mono\\MonoProjekt\\MonoProjekt.Service\\MonoProjekt.Service.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lveoc\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\lveoc\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.3\\microsoft.aspnet.mvc.5.2.3.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.3\\microsoft.aspnet.razor.3.2.3.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.aspnet.webpages\\3.2.3\\microsoft.aspnet.webpages.3.2.3.nupkg.sha512",
@@ -29,7 +31,8 @@
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.6\\microsoft.entityframeworkcore.6.0.6.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.6\\microsoft.entityframeworkcore.abstractions.6.0.6.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.6\\microsoft.entityframeworkcore.analyzers.6.0.6.nupkg.sha512",
-    "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.5\\microsoft.entityframeworkcore.relational.6.0.5.nupkg.sha512",
+    "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.6\\microsoft.entityframeworkcore.design.6.0.6.nupkg.sha512",
+    "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.6\\microsoft.entityframeworkcore.relational.6.0.6.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\lveoc\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

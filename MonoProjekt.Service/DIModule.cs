@@ -1,4 +1,5 @@
-﻿using MonoProjekt.Service.Models;
+﻿using Autofac;
+using MonoProjekt.Service.Models;
 using MonoProjekt.Service.Models.Common;
 using MonoProjekt.Service.Repository;
 using MonoProjekt.Service.Repository.Common;
@@ -13,18 +14,18 @@ using System.Threading.Tasks;
 
 namespace MonoProjekt.Service
 {
-    public class DIModule : NinjectModule
+    public class DIModule : Module
     {
         #region Methods
 
-        public override void Load()
+        protected override void Load(ContainerBuilder builder)
         {
-            Bind<IVehicleMakeService>().To<VehicleMakeService>();
-            Bind<IVehicleMakeRepository>().To<VehicleMakeRepository>();
-            Bind<IVehicleMake>().To<VehicleMake>();
-            Bind<IVehicleModelService>().To<VehicleModelService>();
-            Bind<IVehicleModelRepository>().To<VehicleModelRepository>();
-            Bind<IVehicleModel>().To<VehicleModel>();
+            builder.RegisterType<VehicleMakeService>().As<IVehicleMakeService>();
+            builder.RegisterType<VehicleMakeRepository>().As<IVehicleMakeRepository>();
+            builder.RegisterType<VehicleMake>().As<IVehicleMake>();
+            builder.RegisterType<VehicleModelService>().As<IVehicleModelService>();
+            builder.RegisterType<VehicleModelRepository>().As<IVehicleModelRepository>();
+            builder.RegisterType<VehicleModel>().As<IVehicleModel>();
         }
 
         #endregion Methods
