@@ -17,6 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 //kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddEntityFrameworkNpgsql().AddDbContext<MonoProjektContext>(

@@ -7,7 +7,7 @@ namespace MonoProjekt.MVC.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VehicleMakeController : ControllerBase
+    public class VehicleMakeController : Controller
     {
         #region Constructors
 
@@ -46,11 +46,21 @@ namespace MonoProjekt.MVC.Controllers
             return await VehicleMakeService.FindVehicleMakerAsync(id);
         }
 
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         [HttpPost]
         public async Task<ActionResult<VehicleMake>> PostVehicleMaker([FromBody] VehicleMake vehicleMake)
         {
             var newVehicleMaker = await VehicleMakeService.InsertVehicleMakerAsync(vehicleMake);
             return Ok(newVehicleMaker);
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
         }
 
         [HttpPut]

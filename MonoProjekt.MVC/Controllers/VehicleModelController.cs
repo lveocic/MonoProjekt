@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using MonoProjekt.Service.Models;
 using MonoProjekt.Service.Service.Common;
 
-namespace MonoProjekt.Service.Controllers
+namespace MonoProjekt.MVC.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VehicleModelController : ControllerBase
+    public class VehicleModelController : Controller
     {
         #region Constructors
 
@@ -47,10 +47,20 @@ namespace MonoProjekt.Service.Controllers
             return await VehicleModelService.FindVehicleModelAsync(id);
         }
 
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         [HttpPost]
         public async Task<ActionResult<VehicleModel>> PostVehicleModel([FromBody] VehicleModel vehicleModel)
         {
             return await VehicleModelService.InsertVehicleModelAsync(vehicleModel);
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
         }
 
         [HttpPut]
