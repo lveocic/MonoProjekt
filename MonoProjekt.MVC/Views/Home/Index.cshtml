@@ -1,8 +1,36 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using static MonoProjekt.MVC.Controllers.VehicleMakeController
+
+@model IEnumerable<VehicleMakeRestModel> 
+@{
+    ViewData["Title"] = "Index";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Index VehicleMake</h1>
+
+
+<table class="table table-bordered table-striped" style="width:100%" >
+	<thead>
+		<tr>
+			<th>
+				VehicleMake Name
+			</th>
+			<th>
+				Guid Id
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(var obj in Model)
+		{
+			<tr>
+				<td width="50%">
+					@obj.Name
+				</td>
+				<td width="30%">
+					@obj.Id
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+

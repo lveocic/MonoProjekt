@@ -10,6 +10,8 @@ namespace MonoProjekt.Service.Service.Common
 
         Task<VehicleMake> FindVehicleMakerAsync(Guid id);
 
+        Task<IEnumerable<VehicleMake>> GetAllVehicleMakers();
+
         Task<VehicleMake> InsertVehicleMakerAsync(VehicleMake vehicleMake);
 
         Task UpdateVehicleMakerAsync(VehicleMake vehicleMake);

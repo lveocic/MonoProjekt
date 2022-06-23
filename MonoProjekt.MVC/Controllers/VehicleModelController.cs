@@ -6,8 +6,6 @@ using MonoProjekt.Service.Service.Common;
 
 namespace MonoProjekt.MVC.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     public class VehicleModelController : Controller
     {
         #region Constructors

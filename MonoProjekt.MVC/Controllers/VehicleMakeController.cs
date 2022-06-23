@@ -1,20 +1,27 @@
-﻿using AutoMapper;
+﻿using System.Collections.Generic;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using MonoProjekt.Service.DAL;
 using MonoProjekt.Service.Models;
 using MonoProjekt.Service.Service.Common;
 
 namespace MonoProjekt.MVC.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     public class VehicleMakeController : Controller
     {
+        #region Fields
+
+        private readonly MonoProjektContext Context;
+
+        #endregion Fields
+
         #region Constructors
 
-        public VehicleMakeController(IVehicleMakeService vehicleMakeService, IMapper mapper)
+        public VehicleMakeController(IVehicleMakeService vehicleMakeService, IMapper mapper, MonoProjektContext context)
         {
             VehicleMakeService = vehicleMakeService;
             Mapper = mapper;
+            Context = context;
         }
 
         #endregion Constructors
@@ -27,6 +34,11 @@ namespace MonoProjekt.MVC.Controllers
         #endregion Properties
 
         #region Methods
+
+        public IActionResult Create()
+        {
+            return View();
+        }
 
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteVehicleMaker(Guid id)
@@ -48,7 +60,13 @@ namespace MonoProjekt.MVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var result = VehicleMakeService.GetAllVehicleMakers();
+            if (result != null)
+            {
+                var restModel = Mapper.Map<List<VehicleMakeRestModel>>(result);
+                return View(restModel);
+            }
+            return BadRequest();
         }
 
         [HttpPost]
@@ -76,5 +94,20 @@ namespace MonoProjekt.MVC.Controllers
         }
 
         #endregion Methods
+
+        #region Classes
+
+        public class VehicleMakeRestModel
+        {
+            #region Properties
+
+            public string Abrv { get; set; }
+            public Guid Id { get; set; }
+            public string Name { get; set; }
+
+            #endregion Properties
+        }
+
+        #endregion Classes
     }
 }

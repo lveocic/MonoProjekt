@@ -22,6 +22,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddEntityFrameworkNpgsql().AddDbContext<MonoProjektContext>(
     opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("MonoProjektDb")));
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 var path = AppDomain.CurrentDomain.BaseDirectory;
 var assemblies = Directory.GetFiles(path, "MonoProjekt.*.dll").Select(Assembly.LoadFrom).ToArray();
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());

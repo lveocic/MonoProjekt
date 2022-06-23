@@ -36,9 +36,5 @@
     <ProjectReference Include="..\MonoProjekt.Service\MonoProjekt.Service.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
-
 
 </Project>

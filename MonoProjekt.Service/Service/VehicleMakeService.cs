@@ -39,6 +39,12 @@ namespace MonoProjekt.Service.Service
             return Mapper.Map<VehicleMake>(result);
         }
 
+        public async Task<IEnumerable<VehicleMake>> GetAllVehicleMakers()
+        {
+            var result = await VehicleMakeRepository.GetAllAsync();
+            return result;
+        }
+
         public async Task<VehicleMake> InsertVehicleMakerAsync(VehicleMake vehicleMake)
         {
             CreateVehicleMaker(vehicleMake);
@@ -50,7 +56,7 @@ namespace MonoProjekt.Service.Service
         public async Task UpdateVehicleMakerAsync(VehicleMake vehicleMake)
         {
             var entity = Mapper.Map<VehicleMakeEntity>(vehicleMake);
-            await VehicleMakeRepository.UpdateAsync(entity);    
+            await VehicleMakeRepository.UpdateAsync(entity);
         }
 
         private void CreateVehicleMaker(VehicleMake vehicleMake)

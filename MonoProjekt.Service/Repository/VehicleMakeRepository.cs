@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using MonoProjekt.Service.DAL;
 using MonoProjekt.Service.Models;
 using MonoProjekt.Service.Models.Common;
@@ -44,6 +45,11 @@ namespace MonoProjekt.Service.Repository
             return Mapper.Map<VehicleMake>(await Context.VehicleMakers.FindAsync(id));
         }
 
+        public async Task<IEnumerable<VehicleMake>> GetAllAsync()
+        {
+            return Mapper.Map<IEnumerable<VehicleMake>>(await Context.VehicleMakers.ToListAsync());
+        }
+
         public async Task<VehicleMake> InsertAsync(VehicleMakeEntity entity)
         {
             var insert = await Context.AddAsync(entity);
@@ -52,8 +58,8 @@ namespace MonoProjekt.Service.Repository
 
         public async Task UpdateAsync(VehicleMakeEntity entity)
         {
-           Context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-           await Context.SaveChangesAsync();           
+            Context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            await Context.SaveChangesAsync();
         }
 
         #endregion Methods
