@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using MonoProjekt.MVC.Models;
 using MonoProjekt.Service.DAL;
 using MonoProjekt.Service.Models;
 using MonoProjekt.Service.Service.Common;
@@ -9,19 +10,12 @@ namespace MonoProjekt.MVC.Controllers
 {
     public class VehicleMakeController : Controller
     {
-        #region Fields
-
-        private readonly MonoProjektContext Context;
-
-        #endregion Fields
-
         #region Constructors
 
-        public VehicleMakeController(IVehicleMakeService vehicleMakeService, IMapper mapper, MonoProjektContext context)
+        public VehicleMakeController(IVehicleMakeService vehicleMakeService, IMapper mapper)
         {
             VehicleMakeService = vehicleMakeService;
             Mapper = mapper;
-            Context = context;
         }
 
         #endregion Constructors
@@ -94,20 +88,5 @@ namespace MonoProjekt.MVC.Controllers
         }
 
         #endregion Methods
-
-        #region Classes
-
-        public class VehicleMakeRestModel
-        {
-            #region Properties
-
-            public string Abrv { get; set; }
-            public Guid Id { get; set; }
-            public string Name { get; set; }
-
-            #endregion Properties
-        }
-
-        #endregion Classes
     }
 }

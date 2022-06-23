@@ -1,4 +1,4 @@
-﻿@using static MonoProjekt.MVC.Controllers.VehicleMakeController
+﻿@using MonoProjekt.MVC.Models
 
 @model IEnumerable<VehicleMakeRestModel> 
 @{
@@ -24,10 +24,10 @@
 		{
 			<tr>
 				<td width="50%">
-					@obj.Name
+					@obj?.Name
 				</td>
 				<td width="30%">
-					@obj.Id
+					@obj?.Id
 				</td>
 			</tr>
 		}
